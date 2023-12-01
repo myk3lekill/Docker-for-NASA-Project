@@ -1,0 +1,26 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix 'BackEnd - Server - MVC'",
+    "install-client": "npm install --prefix 'FrontEnd - Client'",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix 'BackEnd - Server - MVC'",
+    "client": "npm start --prefix 'FrontEnd - Client'",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix 'FrontEnd - Client' && npm start --prefix 'BackEnd - Server - MVC'",
+    "test": "npm test --prefix 'BackEnd - Server - MVC' & npm test --prefix 'FrontEnd - Client'",
+    "deploy-cluster": "npm run build --prefix 'FrontEnd - Client' && npm run cluster --prefix 'BackEnd - Server - MVC'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.1",
+    "csv-parse": "^5.5.2",
+    "dotenv": "^16.3.1",
+    "just": "^0.1.8",
+    "nodemon": "^3.0.1"
+  },
+  "description": ""
+}
