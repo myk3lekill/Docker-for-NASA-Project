@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH=../'BackEnd - Server - MVC'/public react-scripts build",
+    "build": "BUILD_PATH=../BackEnd-Server-MVC/public react-scripts build",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
